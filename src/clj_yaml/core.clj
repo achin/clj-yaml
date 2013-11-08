@@ -56,7 +56,7 @@
 
   java.util.ArrayList
   (decode [data]
-    (map decode data))
+    (into [] (map decode data)))
 
   Object
   (encode [data] data)
